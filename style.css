@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.btn.primary {
+  background-color: white;
+  color: #23272A;
+}
+
+.btn.secondary {
+  background-color: #23272A;
+  color: white;
+}
+
+.btn.large {
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+.hero {
+  background: #404EED url('./imgs/bg-hero.png') no-repeat center bottom/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.feature {
+  background-color: white;
+  padding: 100px 20px;
+}
+
+.feature.alt {
+  background-color: #f6f6f6;
+}
+
+.feature h2, .feature-large h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #23272A;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.feature p, .feature-large p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.with-image {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.with-image.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.with-image img {
+  max-width: 550px;
+}
+
+.text-content {
+  max-width: 450px;
+}
+
+.feature-large {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.feature-large img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #23272a;
+  color: white;
+  padding: 40px 20px 40px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .feature h2, .feature-large h2 {
+    font-size: 2rem;
+  }
+
+  .with-image {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .with-image.flex-row-reverse {
+    flex-direction: column;
+  }
+}
